@@ -13,7 +13,7 @@ applications:
     source_ref: main
     source_path: keycloak
     values:
-      app_domain: apps.openshift-498-bd8hw.do500.redhatlabs.dev
+      app_domain: apps.aro-dev.intern.folksam.se
 
   # Pet Battle API
   pet-battle-api:
@@ -38,11 +38,11 @@ applications:
     values:
       image_version: latest # container image version
       config_map: '{
-        "catsUrl": "https://pet-battle-api-labs-test.apps.openshift-498-bd8hw.do500.redhatlabs.dev",
-        "tournamentsUrl": "https://pet-battle-tournament-labs-test.apps.openshift-498-bd8hw.do500.redhatlabs.dev",
-        "matomoUrl": "https://matomo-labs-ci-cd.apps.openshift-498-bd8hw.do500.redhatlabs.dev/",
+        "catsUrl": "https://pet-battle-api-labs-test.apps.aro-dev.intern.folksam.se",
+        "tournamentsUrl": "https://pet-battle-tournament-labs-test.apps.aro-dev.intern.folksam.se",
+        "matomoUrl": "https://matomo-labs-ci-cd.apps.aro-dev.intern.folksam.se/",
         "keycloak": {
-          "url": "https://keycloak-labs-test.apps.openshift-498-bd8hw.do500.redhatlabs.dev/auth/",
+          "url": "https://keycloak-labs-test.apps.aro-dev.intern.folksam.se/auth/",
           "realm": "pbrealm",
           "clientId": "pbclient",
           "redirectUri": "http://localhost:4200/tournament",
